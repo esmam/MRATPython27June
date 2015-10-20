@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>843</width>
+    <height>491</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Permutation Test For a Temporal t-test analysis</string>
+  </property>
+  <property name="toolTip">
+   <string>PThreshold T-test for Temporal Data</string>
+  </property>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>160</y>
+     <width>452</width>
+     <height>221</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="5" column="1">
+     <widget class="QLineEdit" name="ROI">
+      <property name="toolTip">
+       <string>Please enter the prestimulus interval</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="0">
+     <widget class="QLabel" name="ROILabel">
+      <property name="text">
+       <string>ROI</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="MinimumTempLabel">
+      <property name="text">
+       <string>Minimum Temporal Cluster</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="1">
+     <widget class="QComboBox" name="tailComboBox">
+      <item>
+       <property name="text">
+        <string>Please choose an option</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Both</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Left tail</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Right Tail</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QLineEdit" name="MinTempCluster">
+      <property name="toolTip">
+       <string>Please enter the prestimulus interval</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLineEdit" name="Condition1">
+      <property name="toolTip">
+       <string>Please enter the first condition's name</string>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="0">
+     <widget class="QLabel" name="TailLabel">
+      <property name="text">
+       <string>Tail</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="Condition1Label">
+      <property name="text">
+       <string>Condition 1 :</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QLineEdit" name="Prestimulus">
+      <property name="toolTip">
+       <string>Please enter the prestimulus interval</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="PrestimLabel">
+      <property name="text">
+       <string>Prestimulus</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="2">
+     <widget class="QPushButton" name="FindROI">
+      <property name="text">
+       <string>find</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLineEdit" name="StartTime">
+      <property name="toolTip">
+       <string>Enter the start time</string>
+      </property>
+      <property name="inputMask">
+       <string>0</string>
+      </property>
+      <property name="maxLength">
+       <number>1</number>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="StartTimelabel">
+      <property name="text">
+       <string>Start Time:</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>160</y>
+     <width>292</width>
+     <height>171</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_3">
+    <item row="2" column="1">
+     <widget class="QLineEdit" name="PthreshVal">
+      <property name="toolTip">
+       <string>Please Enter the PThreshold value</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="EndTimeLabel">
+      <property name="text">
+       <string>End Time</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLineEdit" name="Condition2">
+      <property name="toolTip">
+       <string>Please enter the first condition's name</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="Condition2Label">
+      <property name="text">
+       <string>Condition 2:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QLineEdit" name="MAXFDR">
+      <property name="toolTip">
+       <string>Please enter the prestimulus interval</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="PtreshLabel">
+      <property name="text">
+       <string>P_value threshold</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QLineEdit" name="NumberPermutaiton">
+      <property name="toolTip">
+       <string>Please enter the prestimulus interval</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="MAxFDRLabel">
+      <property name="text">
+       <string>Max FDR Rate</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="NumberPermLabel">
+      <property name="text">
+       <string>Number Of Permutations</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLineEdit" name="EndTime">
+      <property name="toolTip">
+       <string>enter the ending time </string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>80</y>
+     <width>271</width>
+     <height>62</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_4">
+    <item row="0" column="1">
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <widget class="QLineEdit" name="ProjecTRoot"/>
+      </item>
+      <item row="0" column="1">
+       <widget class="QPushButton" name="FindpushButton">
+        <property name="text">
+         <string>find</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="ProjectRoot">
+      <property name="text">
+       <string>Project Root :</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>0</y>
+     <width>481</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>20</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Temporal only T-test Analysis for source data </string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cancel">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>380</y>
+     <width>169</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Cancel</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Ok">
+   <property name="geometry">
+    <rect>
+     <x>500</x>
+     <y>380</y>
+     <width>126</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Run Analysis</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>140</y>
+     <width>261</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QLabel" name="BadSubjectsLabel">
+      <property name="text">
+       <string>BadSubjects</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="BadSubjects">
+      <property name="toolTip">
+       <string>Please enter the first condition's name</string>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <zorder>layoutWidget</zorder>
+  <zorder>layoutWidget</zorder>
+  <zorder>layoutWidget</zorder>
+  <zorder>layoutWidget</zorder>
+  <zorder>label</zorder>
+  <zorder>cancel</zorder>
+  <zorder>Ok</zorder>
+ </widget>
+ <tabstops>
+  <tabstop>ProjecTRoot</tabstop>
+  <tabstop>FindpushButton</tabstop>
+  <tabstop>Condition1</tabstop>
+  <tabstop>Condition2</tabstop>
+  <tabstop>EndTime</tabstop>
+  <tabstop>PthreshVal</tabstop>
+  <tabstop>Prestimulus</tabstop>
+  <tabstop>MAXFDR</tabstop>
+  <tabstop>MinTempCluster</tabstop>
+  <tabstop>NumberPermutaiton</tabstop>
+  <tabstop>ROI</tabstop>
+  <tabstop>FindROI</tabstop>
+  <tabstop>tailComboBox</tabstop>
+  <tabstop>cancel</tabstop>
+  <tabstop>Ok</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>24</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>15</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::LeftToRight</enum>
+  </property>
+  <widget class="QWidget" name="MRATcentralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>10</width>
+     <height>10</height>
+    </size>
+   </property>
+   <property name="defaultUp">
+    <bool>false</bool>
+   </property>
+   <property name="nativeMenuBar">
+    <bool>false</bool>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionNew_Analysis"/>
+    <addaction name="actionOpen_Analysis"/>
+    <addaction name="actionImport_File"/>
+    <addaction name="actionExport_File"/>
+    <addaction name="actionQuit"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuData">
+    <property name="title">
+     <string>Data</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuGraphics">
+    <property name="title">
+     <string>Graphics</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuStatistics">
+    <property name="title">
+     <string>Statistics</string>
+    </property>
+    <widget class="QMenu" name="menuT_TESTS">
+     <property name="title">
+      <string>T-TESTS</string>
+     </property>
+     <widget class="QMenu" name="menuTemporal">
+      <property name="title">
+       <string>Temporal</string>
+      </property>
+      <addaction name="separator"/>
+      <addaction name="actionPTHreshold"/>
+      <addaction name="actionTFCE"/>
+      <addaction name="actionWindow"/>
+     </widget>
+     <addaction name="separator"/>
+     <addaction name="menuTemporal"/>
+     <addaction name="actionSpatio_Temporal_2"/>
+    </widget>
+    <addaction name="actionSpatio_Temporal"/>
+    <addaction name="menuT_TESTS"/>
+   </widget>
+   <widget class="QMenu" name="menuResults">
+    <property name="title">
+     <string>Results</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuEdit"/>
+   <addaction name="menuData"/>
+   <addaction name="menuGraphics"/>
+   <addaction name="menuStatistics"/>
+   <addaction name="menuResults"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QDockWidget" name="dockWidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>1</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents">
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>11</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>17</width>
+      <height>0</height>
+     </size>
+    </property>
+   </widget>
+  </widget>
+  <action name="actionSpatio_Temporal">
+   <property name="text">
+    <string>ANOVAs</string>
+   </property>
+  </action>
+  <action name="actionSpatio_Temporal_2">
+   <property name="text">
+    <string>Spatio-Temporal</string>
+   </property>
+  </action>
+  <action name="actionNew_Analysis">
+   <property name="text">
+    <string>New Analysis</string>
+   </property>
+  </action>
+  <action name="actionOpen_Analysis">
+   <property name="text">
+    <string>Open Analysis</string>
+   </property>
+  </action>
+  <action name="actionPTHreshold">
+   <property name="text">
+    <string>PTHreshold</string>
+   </property>
+   <property name="statusTip">
+    <string>Run PTHRESHOLD temporal t-test analysis</string>
+   </property>
+  </action>
+  <action name="actionTFCE">
+   <property name="text">
+    <string>TFCE</string>
+   </property>
+  </action>
+  <action name="actionWindow">
+   <property name="text">
+    <string>window</string>
+   </property>
+  </action>
+  <action name="actionImport_File">
+   <property name="text">
+    <string>Import File</string>
+   </property>
+  </action>
+  <action name="actionExport_File">
+   <property name="text">
+    <string>Export File</string>
+   </property>
+  </action>
+  <action name="actionQuit">
+   <property name="text">
+    <string>Quit</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>actionQuit</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>299</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionPTHreshold</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>299</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

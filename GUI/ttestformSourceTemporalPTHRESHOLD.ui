@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>468</width>
+    <height>435</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QFormLayout" name="formLayout">
+   <item row="0" column="0" colspan="2">
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="5" column="0">
+      <widget class="QLabel" name="endTimeLabel">
+       <property name="text">
+        <string>End Time</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="0">
+      <widget class="QLabel" name="thresholdPValueLabel">
+       <property name="text">
+        <string>Threshold p-value</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="1">
+      <widget class="QLineEdit" name="minimumTemporalClusterLineEdit"/>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="startTimeLabel">
+       <property name="text">
+        <string>Start Time</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="1">
+      <widget class="QLineEdit" name="prestimulusLineEdit"/>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="condition2Label">
+       <property name="text">
+        <string>Condition 2 </string>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="0">
+      <widget class="QLabel" name="minimFDRRateLabel">
+       <property name="text">
+        <string>Maximum FDR rate</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="1">
+      <widget class="QLineEdit" name="thresholdPValueLineEdit"/>
+     </item>
+     <item row="1" column="1">
+      <widget class="QPushButton" name="find">
+       <property name="text">
+        <string>find</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QLineEdit" name="condition2LineEdit"/>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="condition1Label">
+       <property name="text">
+        <string>Condition 1</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="0">
+      <widget class="QLabel" name="prestimulusLabel">
+       <property name="text">
+        <string>Prestimulus</string>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="1">
+      <widget class="QLineEdit" name="minimFDRRateLineEdit"/>
+     </item>
+     <item row="5" column="1">
+      <widget class="QLineEdit" name="endTimeLineEdit"/>
+     </item>
+     <item row="4" column="1">
+      <widget class="QLineEdit" name="startTimeLineEdit"/>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="condition1LineEdit"/>
+     </item>
+     <item row="11" column="0">
+      <widget class="QLabel" name="numberOfPermutationsLabel">
+       <property name="text">
+        <string>Number of permutations</string>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="0">
+      <widget class="QLabel" name="tailLabel">
+       <property name="text">
+        <string>tail</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QPushButton" name="find_2">
+       <property name="text">
+        <string>find</string>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="1">
+      <widget class="QComboBox" name="tailComboBox">
+       <item>
+        <property name="text">
+         <string>Please choose an option</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Both</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Left tail</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Right Tail</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="11" column="1">
+      <widget class="QLineEdit" name="numberOfPermutationsLineEdit"/>
+     </item>
+     <item row="8" column="0">
+      <widget class="QLabel" name="minimumTemporalClusterLabel">
+       <property name="text">
+        <string>Minimum Temporal Cluster</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="1" column="0">
+    <widget class="QPushButton" name="cancel">
+     <property name="text">
+      <string>Cancel</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="QPushButton" name="Ok">
+     <property name="text">
+      <string>Run Analysis</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>condition1LineEdit</tabstop>
+  <tabstop>find</tabstop>
+  <tabstop>condition2LineEdit</tabstop>
+  <tabstop>find_2</tabstop>
+  <tabstop>startTimeLineEdit</tabstop>
+  <tabstop>endTimeLineEdit</tabstop>
+  <tabstop>prestimulusLineEdit</tabstop>
+  <tabstop>thresholdPValueLineEdit</tabstop>
+  <tabstop>minimumTemporalClusterLineEdit</tabstop>
+  <tabstop>minimFDRRateLineEdit</tabstop>
+  <tabstop>tailComboBox</tabstop>
+  <tabstop>numberOfPermutationsLineEdit</tabstop>
+  <tabstop>cancel</tabstop>
+  <tabstop>Ok</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>Ok</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>143</x>
+     <y>414</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>233</x>
+     <y>217</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cancel</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>update()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>46</x>
+     <y>414</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>233</x>
+     <y>217</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>condition1LineEdit</sender>
+   <signal>textEdited(QString)</signal>
+   <receiver>condition1LineEdit</receiver>
+   <slot>setText(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>323</x>
+     <y>23</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>323</x>
+     <y>23</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
